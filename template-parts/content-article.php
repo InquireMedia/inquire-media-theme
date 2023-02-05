@@ -6,7 +6,6 @@
                 the_tags('<span class="tag"><i class="fa fa-tag"></i>', '</span><span class="tag"><i class="fa fa-tag"></i>', 
                 '</span>');
             ?>
-            <span class="comments"><a href="#comments"><i class="fa fa-comment"></i>3 comments</a></span>
 	</header>
 <?php
     the_content();
