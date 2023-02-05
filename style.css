@@ -58,7 +58,10 @@ html {
 
 body {
     color: var(--secondary);
-    overflow-x: hidden
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 a {
@@ -113,7 +116,8 @@ h6 {
     height: 15%;
     width: 100%;
     background: var(--primary);
-    color: #fff
+    color: #fff;
+    z-index: 999;
 }
 
 .header .site-title {
@@ -195,6 +199,10 @@ h6 {
     background-color: rgba(255, 255, 255, 0.8)
 }
 
+main {
+    flex: 1;
+}
+
 .main-wrapper {
     margin-top: 7%;
     background: #fff;
@@ -233,7 +241,10 @@ h6 {
 }
 
 .footer {
-    color: rgba(255, 255, 255, 0.7)
+    color: rgba(255, 255, 255, 0.7);
+    height: auto;
+    padding: 1rem;
+    text-align: center;
 }
 
 .footer a {
