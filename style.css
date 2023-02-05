@@ -176,7 +176,7 @@ h6 {
 }
 
 .logo {
-    width: 78px;
+    width: 3%;
 }
 
 .social-list a {
@@ -205,14 +205,14 @@ h6 {
 }
 
 .navbar-nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
 }
 
 .nav-item {
-  list-style: none;
-  margin-right: 5px;
+    list-style: none;
+    margin-right: 5px;
 }
 
 .page-title {
@@ -411,7 +411,7 @@ h6 {
     .header .site-title {
         width: 100%;
         position: absolute;
-        left: 0;
+        left: 5%;
         top: 1.2rem;
         color: var(--white);
         font-size: 1.5em;

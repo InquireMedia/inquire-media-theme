@@ -15,7 +15,7 @@
 			}
 		?>
 		<img class="mb-3 mx-4 logo" src="<?php echo $logo[0]?>" alt="logo" >
-	    <a class="site-title mr-auto" href="index.html">		
+	    <a class="site-title" href="index.html">		
 			<?php echo get_bloginfo('name'); ?>
 		</a>
         
@@ -32,7 +32,7 @@
 							'menu' => 'primary',
 							'container' => '',
 							'theme_location' => 'primary',
-							'items_wrap' => '<ul id="" class="navbar-nav navbar-nav ml-auto">%3$s</ul>' //  d-flex align-items-center
+							'items_wrap' => '<ul id="" class="navbar-nav ml-auto">%3$s</ul>' //  d-flex align-items-center
 						)
 					);
 				?>
