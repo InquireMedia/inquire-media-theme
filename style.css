@@ -204,6 +204,17 @@ h6 {
     max-width: var(--content-max-width);
 }
 
+.navbar-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.nav-item {
+  list-style: none;
+  margin-right: 5px;
+}
+
 .page-title {
     position: sticky;
     top: 0;
