@@ -40,9 +40,9 @@ Author URI: https://github.com/TomCooper01
     /* Font Sizes */
     --font-normal: 1em;
     --font-small: 0.8125rem;
-    /* Sidebar */
-    --sidebar-width: 100%;
-    --sidebar-hight: 15%;
+    /* navbar */
+    --navbar-width: 100%;
+    --navbar-hight: 10%;
     --content-max-width: 100%;
 }
 
@@ -57,7 +57,7 @@ html {
 }
 
 body {
-    color: var(--secondary);
+    background-color: #e3e3e3;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
@@ -68,14 +68,47 @@ a {
     color: var(--pink);
 }
 
+.article-title {
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 25pt;
+    width: 100%;
+}
+
+.article-author,
+.article-date,
+.photo-credit {
+    text-align: center;
+}
+
+.article-main-img {
+    height: 60%;
+    border-radius: 5px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    color: var(--gray-dark);
-    font-weight: bold
+    margin-bottom: .5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
 }
 
 .btn {
@@ -112,7 +145,7 @@ h6 {
 .header {
     position: fixed;
     top: 0;
-    height: 15%;
+    height: var(--navbar-hight);
     width: 100%;
     background: var(--primary);
     color: #fff;
@@ -209,6 +242,29 @@ main {
 
 .main-wrapper .container {
     max-width: var(--content-max-width);
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.article-outer {
+    justify-content: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.article {
+    background-color: white;
+}
+
+.buffer {
+    height: 1%;
 }
 
 .navbar-nav {
@@ -407,7 +463,11 @@ main {
     }
 }
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+    .article-outer {
+        margin-top: var(--navbar-hight);
+    }
+}
 
 @media (max-width: 991.98px) {
     .page-title {

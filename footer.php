@@ -4,12 +4,9 @@
             <?php
                 dynamic_sidebar('footer-1');
             ?>
-	    </footer>
-    
-    </div>
+</footer>
+
 <?php wp_footer(); ?>
-
-
 
 </body>
 </html> 
