@@ -13,7 +13,7 @@
 				<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-	
+
 				<?php
 					if(function_exists('the_custom_logo')){ 
 						$custom_log_id = get_theme_mod('custom_logo');
@@ -24,15 +24,15 @@
 	    		<a class="site-title" href=<?php echo home_url(); ?>>		
 					<?php echo get_bloginfo('name'); ?>
 				</a>
-				
-				<div id="navigation" class="collapse navbar-collapse flex-column">
+
+				<div class="collapse navbar-collapse flex-column">
 					<?php
 						wp_nav_menu(
 							array(
 								'menu' => 'primary',
 								'container' => '',
 								'theme_location' => 'primary',
-								'items_wrap' => '<ul id="" class="navbar-nav ml-auto">%3$s</ul>' //  d-flex align-items-center
+								'items_wrap' => '<ul class="navbar-nav ml-auto">%3$s</ul>' //  d-flex align-items-center
 							)
 						);
 					?>

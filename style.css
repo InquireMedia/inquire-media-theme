@@ -177,7 +177,8 @@ h6 {
 }
 
 .header .navbar {
-    padding: 2rem 1rem
+    padding: 2rem 1rem;
+    font-family: "trajanPro";
 }
 
 .header .navbar-dark .navbar-toggler {
@@ -196,7 +197,6 @@ h6 {
 }
 
 .header .nav-item {
-    font-weight: bold;
     padding-left: 0%;
 }
 
@@ -209,12 +209,16 @@ h6 {
 }
 
 .header .nav-item a {
-    color: rgba(255, 255, 255, 0.8)
+    color: #000;
 }
 
 .header .nav-item a:hover {
     text-decoration: underline;
     color: rgba(0, 0, 0, 0.6)
+}
+
+#navigation {
+    font-family: 'trajanPro';
 }
 
 .logo {
@@ -283,6 +287,9 @@ main {
 .nav-item {
     list-style: none;
     margin-right: 20px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-transform: uppercase;
 }
 
 .page-title {
