@@ -30,6 +30,7 @@ Author URI: https://github.com/TomCooper01
     --light: #c2c2c2;
     --lightgray: #eeeeee;
     --dark: #434242;
+    --inquire-blue: #0056b3;
     --breakpoint-xs: 0;
     --breakpoint-sm: 576px;
     --breakpoint-md: 768px;
@@ -147,14 +148,19 @@ h6 {
     top: 0;
     height: var(--navbar-hight);
     width: 100%;
-    background: var(--primary);
+    background: var(--white);
     color: #fff;
     z-index: 9999;
 }
 
 .header .site-title {
-    color: var(--white);
-    font-size: 1.2em;
+    color: var(--inquire-blue);
+    font-family: "trajanPro";
+    padding-top: 0;
+    padding-bottom: 0;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 1.6em;
     display: block;
 }
 
@@ -191,7 +197,7 @@ h6 {
 
 .header .nav-item {
     font-weight: bold;
-    padding-left: 10%;
+    padding-left: 0%;
 }
 
 .header .nav-item.active .nav-link {
@@ -212,7 +218,8 @@ h6 {
 }
 
 .logo {
-    width: 3%;
+    width: 5%;
+    margin-bottom: 0rem !important;
 }
 
 .social-list a {
@@ -275,7 +282,7 @@ main {
 
 .nav-item {
     list-style: none;
-    margin-right: 5px;
+    margin-right: 20px;
 }
 
 .page-title {
@@ -486,6 +493,7 @@ main {
         color: var(--white);
         font-size: 1.5em;
         display: block;
+        font-family: "trajanPro";
     }
     .header .btn-primary {
         width: 100%
