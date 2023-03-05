@@ -1,12 +1,15 @@
 $(document).ready(function() {
-	
-	$(window).scroll(function() {
-		if ($(this).scrollTop() > 1){  
-			$('.page-title').addClass("sticky");
-		}
-		else{
-			$('.page-title').removeClass("sticky");
-		}
-	});
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 1) {
+            $('.page-title').addClass("sticky");
+        } else {
+            $('.page-title').removeClass("sticky");
+        }
+    });
 
 });
+
+function divRedirection(URL) {
+    window.location.href = URL;
+}

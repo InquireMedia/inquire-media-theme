@@ -1,20 +1,27 @@
 <?php get_header(); ?>
 
-		
-<article class="content px-3 py-5 p-md-5">
+<section class="about-mf main-container">
+	<div id="main" class="container">
+		<div class="col-12 news-container">
+			<div class="col-12">
+				<div id="main-placeholder" class="row mainOpinion">
+					<?php
+					if ( have_posts() ) {
+						while(have_posts())
+						{
+							the_post();
+							get_template_part('template-parts/content', 'block');
+						}
+					}
+					?>
+					
+				</div>
+			</div>
+			<?php
+				the_posts_pagination();
+			?>
+		</div>
+	</div>
+</section>
 
-		<?php
-		if ( have_posts() ) {
-			while(have_posts())
-			{
-				the_post();
-                
-                get_template_part('template-parts/content', 'archive');
-
-
-			}
-		}
-		?>
-	    </article>
-	    
 <?php get_footer(); ?>

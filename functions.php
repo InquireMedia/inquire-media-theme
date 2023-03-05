@@ -71,5 +71,43 @@ function inquire_widget_areas(){
 
 add_action('widgets_init', 'inquire_widget_areas');
 
-?>
+function inquire_excerpt_length( $length ) {
+    return 20;
+}
 
+add_filter('excerpt_length', 'inquire_excerpt_length');
+
+function inquire_return_categories(){
+    $categories = get_categories();
+    $categories_array = array();
+    foreach($categories as $category){
+        $categories_array[$category->term_id] = $category->name;
+    }
+    return $categories_array;
+}
+
+function inquire_return_articles_by_category($category_id, $number_of_articles){
+    $articles = new WP_Query(array(
+        'posts_per_page' => $number_of_articles,
+        'category_name' => $category_id
+    ));
+    return $articles;
+}
+
+function inquire_build_section($category_name, $number_of_articles){
+    $articles = inquire_return_articles_by_category($category_name, $number_of_articles);
+    $link = get_category_link($category_name);
+    echo    '<hr class="news-section-bar-'.$category_name.'">';
+    echo    '<a class="news-section-text-span" href="'.$link.'">
+                <p class="news-section-text-option">'.$category_name.'</p>
+            </a>';
+    while($articles->have_posts()){
+        $articles->the_post();
+        get_template_part('template-parts/content', 'block');
+    }
+
+}
+
+
+
+?>
