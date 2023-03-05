@@ -3,20 +3,16 @@
 <section class="about-mf main-container">
 	<div id="main" class="container">
 		<div class="col-12 news-container">
-			<div class="col-12">
-				<div id="main-placeholder" class="row mainOpinion">
-					<?php
-						inquire_build_section('news', 4);
-						inquire_build_section('opinion', 4);
-						inquire_build_section('feature', 4);
-						inquire_build_section('lifestyle', 4);
-						inquire_build_section('culture', 4);
-						inquire_build_section('entertainment', 4);
-						inquire_build_section('sports', 2);
-						inquire_build_section('satire', 2);
-					?>
-				</div>
-			</div>
+			<?php
+				inquire_build_section('News', 4);
+				inquire_build_section('Opinion', 4);
+				inquire_build_section('Feature', 4);
+				inquire_build_section('Lifestyle', 4);
+				inquire_build_section('Culture', 4);
+				inquire_build_section('Entertainment', 4);
+				inquire_build_section('Sports', 2);
+				inquire_build_section('Satire', 2);
+			?>
 		</div>
 	</div>
 </section>

@@ -45,6 +45,16 @@ Author URI: https://github.com/TomCooper01
     --navbar-width: 100%;
     --navbar-hight: 10%;
     --content-max-width: 100%;
+    /* Section Colours */
+    --News: #0753ab;
+    --Opinion: #ab8fcf;
+    --Feature: #94daf7;
+    --Lifestyle: #b97d9b;
+    --Culture: #fcd823;
+    --Entertainment: #e7a04f;
+    --Science: #be7f80;
+    --Sports: #2e6405;
+    --Satire: #8e0105;
 }
 
 *,
@@ -69,6 +79,124 @@ body {
     background-color: white;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+.news-section-bar {
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.News {
+    color: var(--News);
+}
+
+.News:hover {
+    color: var(--News);
+}
+
+.News-Bar {
+    border-top: var(--News) solid 3px;
+}
+
+.Opinion {
+    color: var(--Opinion);
+}
+
+.Opinion:hover {
+    color: var(--Opinion);
+}
+
+.Opinion-Bar {
+    border-top: var(--Opinion) solid 3px;
+}
+
+.Feature {
+    color: var(--Feature);
+}
+
+.Feature:hover {
+    color: var(--Feature);
+}
+
+.Feature-Bar {
+    border-top: var(--Feature) solid 3px;
+}
+
+.Lifestyle {
+    color: var(--Lifestyle);
+}
+
+.Lifestyle:hover {
+    color: var(--Lifestyle);
+}
+
+.Lifestyle-Bar {
+    border-top: var(--Lifestyle) solid 3px;
+}
+
+.Culture {
+    color: var(--Culture);
+}
+
+.Culture:hover {
+    color: var(--Culture);
+}
+
+.Culture-Bar {
+    border-top: var(--Culture) solid 3px;
+}
+
+.Entertainment {
+    color: var(--Entertainment);
+}
+
+.Entertainment:hover {
+    color: var(--Entertainment);
+}
+
+.Entertainment-Bar {
+    border-top: var(--Entertainment) solid 3px;
+}
+
+.Science {
+    color: var(--Science);
+}
+
+.Science:hover {
+    color: var(--Science);
+}
+
+.Science-Bar {
+    border-top: var(--Science) solid 3px;
+}
+
+.Sports {
+    color: var(--Sports);
+}
+
+.Sports:hover {
+    color: var(--Sports);
+}
+
+.Sports-Bar {
+    border-top: var(--Sports) solid 3px;
+}
+
+.Satire {
+    color: var(--Satire);
+}
+
+.Satire:hover {
+    color: var(--Satire);
+}
+
+.Satire-Bar {
+    border-top: var(--Satire) solid 3px;
+}
+
+.news-section-hr {
+    margin-bottom: -8px;
 }
 
 .card-img-top {

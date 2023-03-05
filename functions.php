@@ -96,18 +96,19 @@ function inquire_return_articles_by_category($category_id, $number_of_articles){
 
 function inquire_build_section($category_name, $number_of_articles){
     $articles = inquire_return_articles_by_category($category_name, $number_of_articles);
-    $link = get_category_link($category_name);
-    echo    '<hr class="news-section-bar-'.$category_name.'">';
-    echo    '<a class="news-section-text-span" href="'.$link.'">
+    $link = get_category_link(get_cat_ID($category_name));
+    echo    '<div class="col-12">';
+    echo    '<hr class="news-section-hr '. $category_name .'-Bar">';
+    echo    '<a class="news-section-bar '.$category_name.'" href="'.$link.'">
                 <p class="news-section-text-option">'.$category_name.'</p>
             </a>';
+    echo   '<div id="'.$category_name.'-Row" class="row mainOpinion">';
     while($articles->have_posts()){
         $articles->the_post();
         get_template_part('template-parts/content', 'block');
     }
-
+    echo    '</div>';
+    echo    '</div>';
 }
-
-
 
 ?>
