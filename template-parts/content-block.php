@@ -1,5 +1,5 @@
 <div class="col-md-3 story article-padded">
-    <div class="card section-card" style="height: 450px;" onclick="divRedirection('<?php the_permalink();?>')">
+    <div class="card section-card" style="height: 480px;" onclick="divRedirection('<?php the_permalink();?>')">
 
         <!-- Check if thumbnail exists if it does add else create a blue box of the same size -->
         <?php if (has_post_thumbnail()) { ?>
