@@ -9,12 +9,14 @@
 						<h1 class="article-title"><?php the_title(); ?></h1>
 					</div>
 					<div class="">
-						<p class="article-author">By <?php echo get_the_author_meta('user_login', $post->post_author); ?></p>	<!-- Author needs to be seperate feild to the uploader as they wont match! -->
+						<!-- return with guest author -->
+						<p class="article-author"><?php echo "By: " . get_the_author_meta('display_name'); ?></p>
 						<p class="article-date"><?php echo get_the_date('F j, Y'); ?></h2>
 					</div>
 					<figure class="figure-article">
 						<img class="article-main-img" src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt=<?php echo get_post_thumbnail_id(get_the_ID()); ?>>
-						<figcaption class="photo-credit"><?php echo get_post_thumbnail_id(get_the_ID()); ?></figcaption>
+						<!-- get the image caption -->
+						<figcaption class="figure-caption"><?php echo "Image taken by: " . get_post(get_post_thumbnail_id())->post_excerpt; ?></figcaption>
 					</figure>
 					<article class="content px-3 py-5 p-md-5">
 						<?php

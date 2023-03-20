@@ -10,8 +10,7 @@
 				inquire_build_section('Lifestyle', 4);
 				inquire_build_section('Culture', 4);
 				inquire_build_section('Entertainment', 4);
-				inquire_build_section('Sports', 2);
-				inquire_build_section('Satire', 2);
+				inquire_build_section_sbs('Sport', 'Satire', 2);
 			?>
 		</div>
 	</div>
